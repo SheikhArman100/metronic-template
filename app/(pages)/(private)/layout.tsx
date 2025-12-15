@@ -1,5 +1,8 @@
-import { Layout14 } from '@/components/layouts/layout-14';
-import RootProvider from '@/provider/root-provider';
+import CookieChecker from "@/components/auth/CookieChecker";
+import { Layout } from "@/components/layout";
+
+
+
 
 export default function PrivateLayout({
   children,
@@ -7,8 +10,10 @@ export default function PrivateLayout({
   children: React.ReactNode;
 }) {
   return (
-    <RootProvider>
+    <CookieChecker>
+    <Layout>
       {children}
-    </RootProvider>
+    </Layout>
+    </CookieChecker>
   );
 }

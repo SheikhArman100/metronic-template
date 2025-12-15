@@ -14,8 +14,8 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: {
-    template: 'CDR Dashboard',
-    default: 'CDR', // a default is required when creating a template
+    template: ' Dashboard',
+    default: '', // a default is required when creating a template
   },
 };
 
@@ -36,7 +36,7 @@ export default async function RootLayout({
 
             <Suspense>{children}</Suspense>
 
-          <Toaster />
+          <Toaster position="top-right" />
         </TooltipProvider>
       </body>
     </html>

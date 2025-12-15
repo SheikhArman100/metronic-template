@@ -25,7 +25,7 @@ export function HeaderLogo() {
   // Single team configuration
   const team = {
     icon: Zap,
-    name: "CDR Dashboard",
+    name: " Dashboard",
     color: "bg-teal-600 text-white"
   };
 
